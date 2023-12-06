@@ -11,7 +11,7 @@ function checkGuess() {
 
 
   if (userGuess === generatedNumber) {
-    message.textContent = `Congratulations! You guessed the number ${generatedNumber} correctly in ${attempts} attempts.`;
+    message.textContent = `Yay! You guessed the number ${generatedNumber} correctly in ${attempts} attempts.`;
   } else if (userGuess < generatedNumber) {
     message.textContent = "Too low! Try again.";
   } else {
