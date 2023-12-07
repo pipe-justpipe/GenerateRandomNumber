@@ -1,4 +1,7 @@
 const generatedNumber = Math.floor(Math.random() * 100) + 1;
+//Math.floor() rounds down the decimal of a number to the nearest integer
+//Math.random() generates a random floating point number
+//Adding 1 ensures the range starts from 1
 let attempts = 0;
 
 function confirmGuess(myGuess) {
