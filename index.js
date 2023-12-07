@@ -1,11 +1,12 @@
-const generatedNumber = Math.floor(Math.random() * 100) + 1;
-//Math.floor() rounds down the decimal of a number to the nearest integer
-//Math.random() generates a random floating point number
-//Adding 1 ensures the range starts from 1
 let attempts = 0;
 
 function confirmGuess(myGuess) {
+    const generatedNumber = Math.floor(Math.random() * 100) + 1;
     attempts++;
+//Math.floor() rounds down a decimal number to the nearest integer 
+//Math.random() generates a random number
+//Adding 1 ensures that the range start from 1
+    console.log(`Generated number: ${generatedNumber}`);
 
     if (myGuess === generatedNumber) {
         console.log(`Yay! You guessed the number ${generatedNumber} correctly in ${attempts} attempts.`);
@@ -16,5 +17,4 @@ function confirmGuess(myGuess) {
     }
 }
 
-confirmGuess(50); 
-
+confirmGuess(50);
